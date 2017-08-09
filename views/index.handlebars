@@ -6,7 +6,7 @@
   	<br>
   	<h4>Add a Burger!</h4>
     <form action="/burgers" method="POST">
-      <input type="text" id="name" name="burger_name" placeholder="Add Burga">
+      <input type="text" id="burgerName" name="burger_name" placeholder="Add Burga">
       <button type="submit" class="waves-effect waves-light btn-large" id="addBurg">Add</a>
     </form>
   </div>
@@ -31,7 +31,7 @@
       </div>
 
       <div class="col s6">
-      <h4>Already Devoured</h4>
+      <h4>Devoured</h4>
         {{#each burgers}}
           {{#if this.devoured}}
             <div class='burgerEaten'>
