@@ -1,0 +1,44 @@
+<h1>Eat-da-Burger!</h1>
+
+<div class="card z-depth-5" width="300px">
+<div class="addBurgerRow">
+  <div class="col s6">
+  	<h4>Add a Burger!</h4>
+    <form action="/burgers" method="POST">
+      <input type="text" id="name" name="burger_name" placeholder="Add Burga">
+      <button type="submit" class="waves-effect waves-light btn-large">Add</a>
+    </form>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col s6">
+      <h5>Ready to Eat</h5>
+        {{#each burgers}}
+          {{#unless this.devoured}}
+            <div>
+              <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button>
+              </form>
+            </div>
+          {{/unless}}
+        {{/each}}
+      </div>
+
+      <div class="col s6">
+      <h5>Already Devoured</h5>
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <div class='burgerEaten'>
+              <div>
+                {{this.burger_name}}
+              </div>
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+</div>
