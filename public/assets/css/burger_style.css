@@ -1,46 +1,74 @@
 @import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC|Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+@import url('https://fonts.googleapis.com/css?family=Pangolin|Varela+Round');
 
 footer.page-footer {
-    padding-top: 20px;
-    background-color: teal;
+    background-color: maroon;
     text-align: center;
+    padding-left: 300px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 h1{
 	text-align: center;
-	color: maroon;
+	color: white;
 	font-family: 'Luckiest Guy', cursive;
-	font-family: 'Holtwood One SC', serif
+	font-family: 'Holtwood One SC', serif;
+	letter-spacing: 5px;
+	-webkit-text-stroke-width: 2px;
+   	-webkit-text-stroke-color: maroon;
 }
 
 .z-depth-5 {
     box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
-    width: 1300px;
-    height: 600px;
-    margin-left: 30px;
+    width: 1000px;
+    height: 800px;
+    margin-left: 150px;
 }
 
-h5{
-	color:white;
-	background-color: teal;
-	text-align: center;
-	padding-top: 5px;
+h4{
+	color: gold;
+/*	text-align: center;
+*/	padding-top: 5px;
 	padding-bottom: 5px;
-}
-
-body {
-	color: teal;
-	font-size: 18px;
+	font-family: 'Pangolin', cursive;
+	font-weight: 10
 }
 
 .addBurgerRow {
-	padding-left: 400px;
-	padding-right: 400px;
+	padding-left: 280px;
+	padding-right: 280px;
 }
- h4 {
- 	text-align: center;
- }
 
  body{
  	background-color: gold;
+ 	color: maroon;
+ 	font-family: 'Pangolin', cursive;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 18px;
  }
+
+ #availableBurg {
+ 	background-color: white;
+ 	color: maroon;
+ 	border-radius: 15px
+ }
+
+ #addBurg {
+ 	width: 250px;
+ 	border-radius: 15px
+	!background-color: maroon; 
+}
+
+.btn-large {
+	background-color: maroon;
+	width: 250px;
+ 	border-radius: 15px
+}
+
+#bob{
+	width: 500px;
+	margin-left: 400px;
+	margin-top: 20px
+}
